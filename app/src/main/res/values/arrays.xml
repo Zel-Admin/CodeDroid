@@ -1,0 +1,14 @@
+
+<resources>
+ <string-array name="theme_names">
+  <item>Dark</item>
+  <item>GitHub Dark</item>
+  <item>Monokai</item>
+ </string-array>
+
+ <string-array name="theme_values">
+  <item>dark</item>
+  <item>github_dark</item>
+  <item>monokai</item>
+ </string-array>
+</resources>

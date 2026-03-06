@@ -1,0 +1,51 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Editor">
+
+        <SeekBarPreference
+            app:key="font_size"
+            android:title="Font Size"
+            android:defaultValue="14"
+            app:min="8"
+            android:max="28"
+            app:showSeekBarValue="true"/>
+
+        <SeekBarPreference
+            app:key="tab_size"
+            android:title="Tab Size"
+            android:defaultValue="4"
+            app:min="2"
+            android:max="8"
+            app:showSeekBarValue="true"/>
+
+        <SwitchPreferenceCompat
+            app:key="word_wrap"
+            android:title="Word Wrap"
+            android:defaultValue="false"/>
+
+        <SwitchPreferenceCompat
+            app:key="auto_indent"
+            android:title="Auto Indent"
+            android:defaultValue="true"/>
+
+        <SwitchPreferenceCompat
+            app:key="line_numbers"
+            android:title="Line Numbers"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Appearance">
+
+        <ListPreference
+            app:key="theme"
+            android:title="Theme"
+            android:entries="@array/theme_names"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="dark"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
